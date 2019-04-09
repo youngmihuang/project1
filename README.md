@@ -6,7 +6,7 @@ quantitive credit risk and default analysis course project1
 
 Todo/Model performance / others… 
 
-##### 4/10 (youngmi)
+4/10 (youngmi)
 
 1. add `data_clean.py` : 处理原数据`LoanStats3d_securev1` dataframe 格式问题，调用 `trans_format()` 及能解决此问题 
 
