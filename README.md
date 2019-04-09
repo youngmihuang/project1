@@ -14,7 +14,7 @@ Todo/Model performance / others…
 
    PS. loan_status 处理前各分类数量
 
-   ![image-20190410002457908](/Users/youngmihuang/Library/Application Support/typora-user-images/image-20190410002457908.png)
+   ![description](/Users/youngmihuang/Desktop/project1/img/description.png)
 
    
 
