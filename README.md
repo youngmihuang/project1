@@ -2,7 +2,6 @@
 quantitive credit risk and default analysis course project1
 
 
-
 ## Description
 
 Todo/Model performance / others… 
@@ -15,7 +14,7 @@ Todo/Model performance / others…
 
 `git pull`
 
-然后直接 push 到 master/origin 即可（只上传 code 的部份，因 github 单一 csv的上限是 100MB ）
+然后直接 push 到 master/origin 即可（只上传 code ）
 
 `git add example.py`
 
@@ -24,4 +23,4 @@ Todo/Model performance / others…
 `git push`
 
 
-
+`
