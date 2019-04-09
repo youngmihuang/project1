@@ -14,7 +14,7 @@ Todo/Model performance / others…
 
    PS. loan_status 处理前各分类数量
 
-   ![description](/Users/youngmihuang/Desktop/project1/img/description.png)
+   ![description](img/description.png)
 
    
 
