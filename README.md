@@ -19,7 +19,7 @@ Todo/Model performance / others…
 
 2. nn structure
 
-   ![nnmodel_stucture](/Users/youngmihuang/Desktop/project1/img/nnmodel_stucture.png)
+   ![nnmodel_stucture](https://github.com/youngmihuang/project1/blob/master/img/nnmodel_stucture.png)
 
 4/11 (lishu)
 
@@ -29,7 +29,9 @@ Todo/Model performance / others…
 
 3. add `string_feature.txt`, `ks_rank.csv`： 字符串特征的分布输出，ks按照高低排序的特征，之后可以直接读取，避免再次计算。
 
-4. add `tree_main.py`: 决策树算法，AUC结果在0.91左右。
+4. add `tree_main.py`: 决策树算法，AUC结果在0.91左右。运用了ks排名前20的特征。
+
+5. add `.gitignore`: 可指定部分文件不被git同步目录监测的影响，一般用于__pycache__或者其他系统文件。
 
 
 4/10 (youngmi)
