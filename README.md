@@ -6,6 +6,21 @@ quantitive credit risk and default analysis course project1
 
 Todo/Model performance / others… 
 
+4/12(youngmi)
+
+1. add `model.py` => NN model (only using 74 numerical feats)
+
+   | date | model | Performance                                                  |
+   | ---- | ----- | ------------------------------------------------------------ |
+   | 4/12 | NN    | 5-fold average Auc score on Validation data: 0.9500247628653332<br/>5-fold average Precision on Validation data: 0.9587681231206997<br/>
+5-fold average Recall on Validation data: 0.5736161616161616 |
+   |      |       |                                                              |
+   |      |       |                                                              |
+
+2. nn structure
+
+   ![nnmodel_stucture](/Users/youngmihuang/Desktop/project1/img/nnmodel_stucture.png)
+
 4/10 (youngmi)
 
 1. add `data_clean.py` : 处理原数据`LoanStats3d_securev1` dataframe 格式问题，调用 `trans_format()` 及能解决此问题 
