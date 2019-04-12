@@ -1,19 +1,16 @@
 
 # -*_ coding: utf-8 -*-
 """
-Editor: Youngmi huang
-Update: 2019/04/10
+Created on Apr 10 23:05:00 2019
+@author: Youngmi Huang
+@email: cyeninesky3@gmail.com
+
 """
 import time
 import numpy as np 
 import pandas as pd 
 import pickle
 import datetime
-import lightgbm as lgb
-from datetime import date
-from sklearn.linear_model import LogisticRegression
-from sklearn.model_selection import train_test_split
-import xgboost as xgb
 
 def trans_format():
     filepath = '../csv/LoanStats3d_securev1.csv'
@@ -39,15 +36,23 @@ def preprocess(df):
     df = df[~df['loan_status'].isin(['Late (31-120 days)', 'In Grace Period', 'Late (16-30 days)', 'Default'])]
     df['label'] = df.loc[:, 'loan_status'].apply(lambda x: 1 if x == 'Charged Off' else 0)
     df = df.drop(drop_feats, axis=1)
-    return df
 
+    # 先處理 numerical 的部分
+    df_numeric = df.select_dtypes(exclude=["object"])
+    df_numeric = df_numeric.fillna(0)
+    df_numeric = df_numeric.reset_index(drop=True)    
+    return df_numeric
 
-# statistical
-data = pd.read_csv('../csv/LoanStats3d_securev.csv')
-print('Total: {}'.format(len(data)))
-print('Total features: {}'.format(len(data.columns)))
-print(data['loan_status'].value_counts())
+def statistical():
+    data = pd.read_csv('../csv/LoanStats3d_securev.csv')
+    print('Total: {}'.format(len(data)))
+    print('Total features: {}'.format(len(data.columns)))
+    print(data['loan_status'].value_counts())
 
-# use sample data to do data preprocessiing 
-sample = pd.read_csv('../csv/2015Sample.csv')
-print(preprocess(sample))
+    # use sample data to do data preprocessiing 
+    sample = pd.read_csv('../csv/2015Sample.csv')
+    print(preprocess(sample))
+
+if __name__ == '__main__':
+    statistical()
+    
