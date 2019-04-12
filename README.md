@@ -21,6 +21,17 @@ Todo/Model performance / others…
 
    ![nnmodel_stucture](/Users/youngmihuang/Desktop/project1/img/nnmodel_stucture.png)
 
+4/11 (lishu)
+
+1. add `tools.py` : 包含三个用来处理字符串特征的小函数。
+
+2. add `ks_rank.py` : 用来处理全部的数值型特征，计算KS并排序，输出到同目录下的ks_rank.csv
+
+3. add `string_feature.txt`, `ks_rank.csv`： 字符串特征的分布输出，ks按照高低排序的特征，之后可以直接读取，避免再次计算。
+
+4. add `tree_main.py`: 决策树算法，AUC结果在0.91左右。
+
+
 4/10 (youngmi)
 
 1. add `data_clean.py` : 处理原数据`LoanStats3d_securev1` dataframe 格式问题，调用 `trans_format()` 及能解决此问题 
